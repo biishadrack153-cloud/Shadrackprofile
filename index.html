@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shadrack Bii | Software Engineering Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f0;--surface:#ffffff;--ink:#14201b;--muted:#55645d;--line:#d5dcd6;--green:#0f5c3f;--gold:#e9a400;--on-green:#ffffff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1713;--surface:#18241e;--ink:#eaf1ec;--muted:#9fb0a7;--line:#2a3a32;--green:#4fc08d;--gold:#f2b632;--on-green:#0f1713;color-scheme:dark}}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;overflow-x:auto;padding-top:14px;padding-bottom:14px;white-space:nowrap}
+nav a{text-decoration:none;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+section{padding:72px 0 8px}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:800;margin-bottom:22px}
+.hero{padding-top:200px}
+.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);font-weight:800;letter-spacing:-.02em}
+.hero p{max-width:34em;color:var(--muted);font-size:1.15rem;margin:22px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--green)}
+.btn.main{background:var(--green);color:var(--on-green)}
+.proj{display:grid;gap:0;border-top:2px solid var(--ink)}
+.p{padding:26px 0;border-bottom:1px solid var(--line)}
+.p h3{font-size:1.5rem;font-weight:700}
+.p p{margin:8px 0 12px;max-width:40em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{font-size:.85rem;padding:3px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.status{display:inline-block;font-size:.85rem;font-weight:600;padding:2px 12px;border-radius:999px;background:var(--gold);color:#14201b;margin-left:8px;vertical-align:middle}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.skills h3{font-size:1.1rem;margin-bottom:8px;color:var(--green)}
+.skills ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:3px solid var(--green)}
+.tl li{position:relative;padding-bottom:22px}
+.tl li::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--gold)}
+.tl strong{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:1.15rem}
+.tl span{display:block;color:var(--muted)}
+.contact a.big{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:clamp(1.4rem,5vw,2rem);font-weight:700;word-break:break-all}
+.links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:20px;padding:0;list-style:none}
+body::before{content:"";position:absolute;top:54px;left:0;right:0;height:190px;z-index:-1;pointer-events:none;opacity:.9;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='%23e9a400' fill-opacity='.4'%3E%3Ccircle cx='40' cy='24' r='10'/%3E%3Ccircle cx='55' cy='35' r='10'/%3E%3Ccircle cx='49' cy='53' r='10'/%3E%3Ccircle cx='31' cy='53' r='10'/%3E%3Ccircle cx='25' cy='35' r='10'/%3E%3C/g%3E%3Ccircle cx='40' cy='40' r='6' fill='%230f5c3f' fill-opacity='.6'/%3E%3Cg fill='%230f5c3f' fill-opacity='.3'%3E%3Ccircle cx='115' cy='99' r='10'/%3E%3Ccircle cx='130' cy='110' r='10'/%3E%3Ccircle cx='124' cy='128' r='10'/%3E%3Ccircle cx='106' cy='128' r='10'/%3E%3Ccircle cx='100' cy='110' r='10'/%3E%3C/g%3E%3Ccircle cx='115' cy='115' r='6' fill='%23e9a400' fill-opacity='.7'/%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){body::before{opacity:.3}}
+.quote{margin:56px 0 0;padding:22px 24px;border-left:6px solid var(--gold);background:var(--surface);border-radius:0 14px 14px 0}
+.quote p{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:clamp(1.25rem,4.5vw,1.7rem);font-weight:700;line-height:1.3;margin:0}
+.quote span{display:block;margin-top:8px;color:var(--muted);font-size:.95rem}
+.avatar{border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--on-green);font:800 3rem "Bricolage Grotesque",system-ui,sans-serif;border:4px solid var(--gold)}
+.stage{perspective:600px;width:150px;margin-bottom:24px;animation:float 5s ease-in-out infinite}
+.stage .avatar{width:150px;height:150px;transform-style:preserve-3d;transition:transform .12s ease-out;box-shadow:0 18px 30px -12px rgba(0,0,0,.45),0 0 0 8px rgba(233,164,0,.25)}
+@keyframes float{50%{transform:translateY(-8px)}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.gallery figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.gallery figcaption{margin-top:8px;color:var(--muted);font-size:.95rem;text-align:center}
+.car-wrap{perspective:700px;max-width:250px;margin:0 auto;animation:sway 6s ease-in-out infinite}
+.lap-wrap{max-width:100%}
+@keyframes sway{0%,100%{transform:rotateY(10deg)}50%{transform:rotateY(-10deg)}}
+.car3d,.lap3d{position:relative;border-radius:18px;border:3px solid var(--gold);transform-style:preserve-3d;transition:transform .12s ease-out;box-shadow:0 26px 36px -14px rgba(0,0,0,.55);--gx:50%;--gy:30%}
+.car3d{aspect-ratio:9/16}
+.lap3d{aspect-ratio:8/7}
+.car3d video,.lap3d img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:15px;display:block;background:#14201b}
+.glare{position:absolute;inset:0;border-radius:15px;pointer-events:none;background:radial-gradient(circle at var(--gx) var(--gy),rgba(255,255,255,.35),transparent 55%)}
+.pop{position:absolute;left:12px;bottom:14px;padding:6px 14px;border-radius:999px;background:var(--gold);color:#14201b;font-weight:600;font-size:.9rem;transform:translateZ(50px);box-shadow:0 10px 16px -6px rgba(0,0,0,.5)}
+@media (prefers-reduced-motion:reduce){.stage,.car-wrap{animation:none}}
+footer{margin-top:72px;padding:24px 0 32px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap">
+<a href="#home">Home</a><a href="#about">About me</a><a href="#skills">Skills</a><a href="#projects">My projects</a><a href="#learning">Learning journey</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main class="wrap">
+<section id="home" class="hero">
+<div class="stage"><div class="avatar" id="avatar" role="img" aria-label="Shadrack Bii profile">SB</div></div>
+<h1>Software engineer in the making, building for Kenya.</h1>
+<p>Hi, I’m Shadrack Bii, a Software Engineering student. I build websites and web apps that solve real problems for local businesses and workers. My goal is a junior developer role where I can ship useful software and grow with a strong team.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+<blockquote class="quote"><p>Every line of code I write today is a step toward the developer I’m becoming.</p><span>Keep learning. Keep building. Keep going.</span></blockquote>
+<div class="gallery">
+<figure><div class="car-wrap lap-wrap"><div class="lap3d" id="lap3d"><img alt="My laptop showing Flutter code and a phone emulator" src="laptop.jpg"><div class="glare"></div><span class="pop">Always building</span></div></div><figcaption>My workspace, in 3D. Coding in Flutter and Firebase.</figcaption></figure>
+<figure><div class="car-wrap"><div class="car3d" id="car3d"><video autoplay muted loop playsinline preload="auto" aria-label="My car in motion" src="car.mp4"></video><div class="glare"></div><span class="pop">Drive &amp; ambition</span></div></div><figcaption>My ride, in 3D. Move your finger over it.</figcaption></figure>
+</div>
+</section>
+
+<section id="about">
+<h2>About me</h2>
+<p>I started coding because I wanted to build things people actually use. I’m now studying Software Engineering and putting what I learn into real projects: a hotel website, a salon website and a platform that helps people find trusted workers.</p>
+<p>I like clear code, simple interfaces and finishing what I start. I’m looking for internships, junior roles and freelance work where I can keep learning by building.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Front end</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul></div>
+<div><h3>Programming</h3><ul><li>Java</li><li>Problem solving</li><li>Object-oriented design</li></ul></div>
+<div><h3>Tools</h3><ul><li>Git and GitHub</li><li>VS Code</li><li>Deploying websites</li></ul></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>My projects</h2>
+<div class="proj">
+<article class="p"><h3>Royal Star Hotel Website</h3><p>A website for a hotel that shows rooms, services and contact details so guests can learn about the hotel and reach out to book.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+<article class="p"><h3>VerifiedWorkers Kenya</h3><p>A platform that helps people find trusted, verified workers, so hiring someone for a job feels safer.</p><ul class="tags"><li>Web app</li><li>Worker profiles</li><li>Verification</li></ul></article>
+<article class="p"><h3>Jas Nails &amp; Lashes Salon Website</h3><p>A clean, mobile-friendly website for a beauty salon, showing services and making it easy for clients to get in touch.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+<article class="p"><h3>Developer Protection System<span class="status">Coming soon</span></h3><p>A future project to protect developers’ work and payments when they build software for clients. Currently in planning.</p><ul class="tags"><li>Planning</li><li>Research</li></ul></article>
+</div>
+</section>
+
+<section id="learning">
+<h2>Learning journey</h2>
+<ul class="tl">
+<li><strong>Studying now</strong><span>Software Engineering coursework, with a focus on Java and object-oriented programming.</span></li>
+<li><strong>Practising</strong><span>JavaScript for interactive websites, and Git and GitHub for version control.</span></li>
+<li><strong>Next up</strong><span>Back-end development and databases, so I can build the full VerifiedWorkers platform.</span></li>
+<li><strong>Long-term goal</strong><span>Build and launch the Developer Protection System.</span></li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>Need a website, or hiring a junior developer? Send me a message.</p>
+<a class="big" href="mailto:shadrackbii153@gmail.com">shadrackbii153@gmail.com</a>
+<ul class="links">
+<li><a href="tel:+254701920980">Call 0701 920 980</a></li>
+<li><a href="https://wa.me/254701920980">WhatsApp</a></li>
+</ul>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Shadrack Bii. Built with HTML, CSS and JavaScript.</div></footer>
+
+<script>
+(function(){
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var a=document.getElementById('avatar');
+function tilt(e){var r=a.getBoundingClientRect();var dx=(e.clientX-r.left-r.width/2)/innerWidth;var dy=(e.clientY-r.top-r.height/2)/innerHeight;a.style.transform='rotateY('+(dx*60)+'deg) rotateX('+(-dy*60)+'deg)';}
+addEventListener('pointermove',tilt);addEventListener('pointerdown',tilt);
+['car3d','lap3d'].forEach(function(id){
+var c=document.getElementById(id);if(!c)return;
+function m(e){var r=c.getBoundingClientRect();var x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+c.style.transform='rotateY('+((x-.5)*40)+'deg) rotateX('+((.5-y)*40)+'deg)';
+c.style.setProperty('--gx',(x*100)+'%');c.style.setProperty('--gy',(y*100)+'%');}
+c.addEventListener('pointermove',m);c.addEventListener('pointerdown',m);
+c.addEventListener('pointerleave',function(){c.style.transform='';});
+});
+})();
+</script>
+</body>
+</html>
